@@ -1,0 +1,101 @@
+
+.bg-container{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to left,#5680E0,#84CEEB,#5AB9EA,#C1C8E4,#8860D0);
+
+
+}
+.sign-in{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline 5px #5a2dae;
+    color: #5a2dae;
+    
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 10px;
+    margin:10px;
+    width:40%;
+}
+.form-container{
+    margin:auto 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+.label-name{
+    color:#c78989;
+    font-size: 18px;
+    text-align: left;
+}
+.text-container{
+    border-style: none;
+    width:70%;
+    border-radius: 5px;
+    height:50px;
+    border-color: #fff;
+    outline: none;
+    
+}
+.forgot-password{
+    color:#797979;
+    font-size:10px;
+    text-align: start;
+    margin:0px 5px 5px 5px;
+}
+.user{
+    color:#797979;
+    font-size:15px;
+    cursor: pointer;  
+    text-decoration: underline;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+
+
+}
+.button-element{
+    background-color: #077fbb;
+    color: #e4ebee;
+    cursor: pointer;
+    outline: none;
+    border:0px;
+    margin-bottom: 5px;
+    margin:10px;
+    border-radius: 10px;
+    padding:10px;
+}
+.button-element:hover{
+    background-color: #095378;
+}
+.button-signIn{
+    background-color: #07bb31;
+    color: #e4ebee;
+    cursor: pointer;
+    outline: none;
+    border:0px;
+    margin:10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding:10px;
+}
+.button-signIn:hover{
+    background-color: #0c6a16;
+}
+.button-signIn:disabled{
+    background-color: #797979;
+}
+.err-msg{
+    color: #f31a1a;
+    font-size: 12px;
+}
