@@ -14,8 +14,9 @@
     text-align: center;
     text-decoration: underline 5px #5a2dae;
     color: #5a2dae;
-    
+    margin-left: -5px;
 }
+
 
 .form{
     background-color: #fff;

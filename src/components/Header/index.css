@@ -1,0 +1,126 @@
+.bgh-container{
+    height:10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.heading-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 8px;
+
+}
+.icon-header-chef{
+    height:50px;
+    width: 50px;
+    padding:8px;
+    color:rgb(232, 185, 16);
+}
+.heading-uni-header{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    align-self: center;
+    color:#000000;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.list-name{
+    margin: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .list-name{
+      display: none;
+    }
+  }
+.logout-btn{
+    background-color:rgb(232, 185, 16) ;
+    color:#000;
+    outline: none;
+    border: 0px;
+    width:70px;
+    height:30px;
+    align-self:center;
+    margin-left: 10px;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .logout-btn{
+      display: none;
+    }
+  }
+.hamburger-btn {
+    border: none;
+    background: none;
+    margin-left: 0px;
+    margin-right: 20%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hamburger-btn {
+      display: none;
+      margin-right: 0%;
+    }
+  }
+  
+  .modal-container {
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+    margin-top: 0px;
+    background: #e5e5e5;
+    width: 100vw;
+  }
+  
+  .nav-link-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color:rgb(232, 185, 16) ;
+    margin:5px;
+    align-self: center;
+  }
+  .nav-menu-item {
+    font-family: 'Roboto';
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .close-btn {
+    border: none;
+    background: none;
+  }
+  .list-logout-btn{
+    background-color:rgb(232, 185, 16) ;
+    color:#000;
+    outline: none;
+    border: 0px;
+    width:70px;
+    height:30px;
+    align-self:center;
+    margin-left: 10px;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+}

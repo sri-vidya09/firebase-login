@@ -101,3 +101,21 @@
     color: #f31a1a;
     font-size: 12px;
 }
+.google{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.google-icon{
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+}
+.google-login{
+    color:#797979;
+    font-size: 12px;
+   
+    text-align: center;
+}

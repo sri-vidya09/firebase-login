@@ -1,0 +1,38 @@
+.bgf-container{
+    background-color:#010005;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+.icon-chef{
+    height:50px;
+    width: 50px;
+    padding:8px;
+    color:#fff;
+}
+.para{
+    color:#fff;
+    text-align: center;
+    margin: 20px;
+    padding:5px;
+    font-size: 18px;
+}
+.heading-uni{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif ;
+    align-self: center;
+    color: #fff;
+}
+.icon{
+    height:40px;
+    width: 40px;
+    padding:8px;
+    color:#fff;
+}

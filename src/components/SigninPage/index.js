@@ -7,6 +7,7 @@ import "./index.css"
 import { createUserWithEmailAndPassword,updateProfile } from 'firebase/auth'
 
 
+
 function SigninPage() {
   const navigate = useNavigate()
     const [email,setEmail] = useState("")
@@ -31,7 +32,7 @@ function SigninPage() {
         await updateProfile(user,{
           displayName:username
         });
-         navigate("/login")
+         navigate("/home")
         })
         .catch((error)=>{
           
@@ -43,7 +44,9 @@ function SigninPage() {
   return (
       <div className='bg-container'>
       <form className='form' onSubmit={onSubmitForm}>
-      <h1 className='sign-in'>Sign In</h1>
+          <h1 className='sign-in'>Sign In</h1>
+          
+      
      <div className='form-container'>
           <label className="label-name" htmlFor='userName'>User Name</label>
           <input id="userName" 
