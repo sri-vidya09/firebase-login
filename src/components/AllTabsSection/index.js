@@ -1,10 +1,12 @@
 import {Component} from 'react'
-import HeadingPage from '../HeadingPage'
+import AllTabView from '../AllTabView'
+
+import "./index.css"
 
 class AllTabsSection extends Component{
     state={
-        allTabs:[],
-    }
+        allTabs:[],activeTab:[],
+        }
     componentDidMount(){
         this.getAllTabs()
     }
@@ -21,11 +23,12 @@ class AllTabsSection extends Component{
         if (response.ok===true){
             const data = await response.json()
             console.log(data)
-            const fetchedData=data.table_menu_list.map(tabs=>({
+            const fetchedData=data[0].table_menu_list.map(tabs=>({
                 menuCategory:tabs.menu_category,
                 menuCategoryId:tabs.menu_category_id,
             }))
-            this.setState({allTabs:fetchedData})
+           
+            this.setState({allTabs:fetchedData,})
         }
     }
 
@@ -33,9 +36,12 @@ class AllTabsSection extends Component{
         const {allTabs} = this.state
         return(
 <div className='heading-all'>
-    {allTabs.map(item=>(
-        <HeadingPage key={item.id}  headingDetails={item} />
-    ))}
+    <ul className='unordered-list'>
+      {allTabs.map(item=>(
+        <AllTabView key={item.menuCategoryId}  headingDetails={item} />
+    ))}  
+    </ul>
+    
 </div>
         )
     }

@@ -1,0 +1,9 @@
+.unordered-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 32px;
+    width: 100vw;
+
+}
